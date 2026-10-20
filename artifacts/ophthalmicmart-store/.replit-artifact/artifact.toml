@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Ophthalmicmart Storefront"
+description = "A storefront migration for Ophthalmicmart, bringing its ophthalmic equipment catalog, product discovery, and editorial content into a responsive web experience."
+version = "1.0.0"
+id = "artifacts/ophthalmicmart-store"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24768
+
+[services.development]
+run = "pnpm --filter @workspace/ophthalmicmart-store run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ophthalmicmart-store", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ophthalmicmart-store/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24768"
+BASE_PATH = "/"
