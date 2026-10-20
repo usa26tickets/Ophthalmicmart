@@ -1,6 +1,6 @@
-# [Project name]
+# Ophthalmicmart Storefront Migration
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A responsive storefront migration for Ophthalmicmart, with source-matched catalog browsing, product details, editorial content, and a local cart.
 
 ## Run & Operate
 
@@ -22,7 +22,10 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/ophthalmicmart-store/` — the storefront app.
+- `artifacts/ophthalmicmart-store/src/data/catalog.ts` — source-derived product and article catalog.
+- `artifacts/ophthalmicmart-store/clone-data/` — source captures, inventory, brand tokens, and migration notes.
+- `artifacts/ophthalmicmart-store/public/images/` — locally stored source-site assets.
 
 ## Architecture decisions
 
@@ -30,7 +33,9 @@ _Populate as you build — non-obvious choices a reader couldn't infer from the 
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Home, shop, product-detail, About, Blog, and Cart pages.
+- Searchable/sortable catalog with a persistent browser cart.
+- Checkout and payments are intentionally not connected yet.
 
 ## User preferences
 

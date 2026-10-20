@@ -1,0 +1,54 @@
+{
+  "source": "https://www.ophthalmicmart.com/",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "sections": [
+        "Header: lowercase Ophthalmicmart wordmark; Home, About Us, Blog, Contact and Shop navigation; search, cart and account controls",
+        "Large Revolution Slider banner using ophthalmicmart-new-banner.jpg",
+        "Optometry Equipment for sale intro paragraph",
+        "Featured equipment product grid",
+        "Get Latest Ophthalmic Instruments Article and Products News article cards",
+        "Discount Ophthalmic Equipment product grid",
+        "About Ophthalmicmart copy with Read Our Story link",
+        "Black footer with social links, 2026 copyright and Terms, Privacy Policy, Warranty"
+      ]
+    },
+    {
+      "path": "/shop/",
+      "title": "Shop",
+      "sections": [
+        "Shop intro, sort controls, product grid, pagination and product categories"
+      ]
+    },
+    {
+      "path": "/product/:slug/",
+      "title": "Product details",
+      "sections": [
+        "Breadcrumb, product title, image, sale/current price, description, stock status, quantity and add-to-cart"
+      ]
+    },
+    {
+      "path": "/about-us/",
+      "title": "About Us",
+      "sections": [
+        "Brand intro, About Us, Why Us, Our Commitment, Goal, Services, Products, Office contact information"
+      ]
+    },
+    {
+      "path": "/blog/",
+      "title": "Blog",
+      "sections": [
+        "Ophthalmic Blog introduction, article category filters, article cards and recent-article list"
+      ]
+    },
+    {
+      "path": "/cart/",
+      "title": "Cart",
+      "sections": [
+        "Cart line items, quantity updates, removal and subtotal"
+      ]
+    }
+  ]
+}
